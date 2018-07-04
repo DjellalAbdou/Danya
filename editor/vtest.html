@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="This is a test for project n°3 team 26">
+    <meta name="author" content="0m3ga-K0d3r">
+    <link rel="icon" href="">
+
+
+    <!-- Bootstrap & FontAwesome Stylesheets -->
+    <link rel="stylesheet" href="../assets/css/vendors/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/vendors/font-awesome.min.css">
+    <!-- For Icons -->
+    <!-- Custom CSS File -->
+    <!-- Animation CSS -->
+    <link rel="stylesheet" href="../assets/css/vendors/animate.min.css">
+
+
+    <link rel="stylesheet" href="../assets/css/resources/styleSheet.css">
+
+    <script src="../assets/js/vendors/jquery-3.1.1.min.js"></script>
+    <script src="../assets/js/vendors/bootstrap.min.js"></script>
+
+      <!--The main library -->
+      <script src="../assets/js/resources/libraryDanyaProject.js"></script>
+
+
+    <title>codeViewArea</title>
+
+</head>
+
+
+<body>
+   <div id="display" class="container-fluid">
+      
+        <div style="margin: 25px;"><div align="center"><iframe src="https://www.youtube.com/embed/-bfR-HuORME" width="" height=""></iframe></div><p align="center" style="margin-top: 5px; font-family: Georgia; font-size: 15px;"><i>coucou</i></p></div>
+
+        <table style="margin: auto;"><tr><td style="text-align: center;"><img src="../uploads/images/560.jpg" style="width: 200px; height: 200px;"></td></tr></table>
+
+        <table class="maintable" style="width: 100%;"><tr><th style="width: 20%;">abdou</th><th style="width: 20%;">abdou</th><th style="width: 20%;">abdou</th><th style="width: 20%;">abdou</th><th style="width: 20%;">abdou</th></tr><tr><td>abdou</td><td>abdou</td><td>abdou</td><td>abdou</td><td>abdou</td></tr><tr><td>abdou</td><td>abdou</td><td>abdou</td><td>abdou</td><td>abdou</td></tr><tr><td>abdou</td><td>abdou</td><td>abdou</td><td>abdou</td><td>abdou</td></tr><tr><td>abdou</td><td>abdou</td><td>abdou</td><td>abdou</td><td>abdou</td></tr><tr><td>abdou</td><td>abdou</td><td>abdou</td><td>abdou</td><td>abdou</td></tr></table>
+   </div>
+      
+
+   <a href="javascript:void(0);" id="viewFullScreenButton" style="margin-top:20px;" >submit</a>
+   <form method="POST" id="fullScreenForm" action="test.php" target="_blank" style="display:none;" >
+            <input type="hidden" value="" id="viewFullScreen" name="viewFullScreen">
+    </form>
+    <script type="text/javascript">
+            document.getElementById('viewFullScreenButton').addEventListener('click',function () {
+                    var Dview=document.getElementById('display');
+                    var html=Dview.innerHTML;
+                    var i=html.indexOf("https");
+                    console.log(html[i]+html[i+1]);
+
+                    document.getElementById('viewFullScreen').value=html;
+                    $("#fullScreenForm").submit();  
+                },false)
+    </script>
+</body>
+</html>
